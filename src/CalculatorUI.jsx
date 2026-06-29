@@ -24,7 +24,7 @@ const CalculatorUI = () => {
             const user_email = localStorage.getItem("user_email");
             // console.log("Location captured: ",location)
             // console.log(`Location latitude and longitude: ${location.lat}, ${location.lng}`)
-            await fetch("http://localhost:8082/sos",{
+            await fetch("https://silent-sos-backend.onrender.com/sos",{
                 "method":"POST",
                 "headers":{"Content-Type":"application/json"},
                 "body":JSON.stringify({user_email,location})

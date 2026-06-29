@@ -25,7 +25,7 @@ const History = () => {
     const fetchDetails = async () => {
         try {
             const res = await fetch(
-                `http://localhost:8082/user?user_email=${userEmail}`
+                `https://silent-sos-backend.onrender.com/user?user_email=${userEmail}`
             );
 
             const data = await res.json();
@@ -83,7 +83,7 @@ const History = () => {
 
     async function updateDetails() {
         try {
-            const res = await fetch("http://localhost:8082/user", {
+            const res = await fetch("https://silent-sos-backend.onrender.com/user", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

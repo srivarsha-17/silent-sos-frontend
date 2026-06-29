@@ -50,7 +50,7 @@ const Signup = () => {
 
   async function submitForm() {
     try {
-      const res = await fetch("http://localhost:8082/register", {
+      const res = await fetch("https://silent-sos-backend.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

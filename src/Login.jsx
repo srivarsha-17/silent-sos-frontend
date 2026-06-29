@@ -26,7 +26,7 @@ const Login = () => {
 
         try {
 
-            const res = await fetch("http://localhost:8082/login", {
+            const res = await fetch("https://silent-sos-backend.onrender.com/login", {
 
                 method: "POST",
 
